@@ -13,12 +13,26 @@ body {
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    position: relative; /* Pour positionner l'image */
+    overflow: hidden; /* Pour éviter que l'image dépasse */
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Aligne le texte et l'image */
 }
 
 header h1 {
     margin: 0;
+}
+
+/* Style pour l'image en haut à droite */
+.header-image {
+    width: 100px; /* Ajustez la taille selon vos besoins */
+    height: auto; /* Conserve le ratio d'aspect */
+    border-radius: 50%; /* Rend l'image ronde */
 }
 
 /* Style pour la navigation */
@@ -48,12 +62,33 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Style pour les sections principales */
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style pour la partie gauche (Projets) */
+.left-side {
+    flex: 1;
+    padding: 20px;
+    max-width: 60%;
+}
+
+/* Style pour la partie droite (À propos et Compétences) */
+.right-side {
+    flex: 1;
+    padding: 20px;
+    max-width: 35%;
+}
+
 /* Style pour les sections */
 section {
     padding: 20px;
     margin: 20px auto;
     background-color: white;
-    max-width: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -87,6 +122,20 @@ section h2 {
     border-radius: 8px;
 }
 
+/* Style pour les images des projets */
+.project-images {
+    display: flex;
+    justify-content: space-between; /* Éspace les images uniformément */
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante si nécessaire */
+    gap: 10px; /* Espacement entre les images */
+}
+
+.project-images img {
+    max-width: 30%; /* Ajuste la largeur maximale des images */
+    height: auto; /* Conserve le ratio d'aspect */
+    border-radius: 8px; /* Bords arrondis des images */
+}
+
 /* Style pour la liste des compétences */
 #skills ul {
     list-style-type: none;
@@ -98,6 +147,41 @@ section h2 {
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
+}
+
+/* Style pour le formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
 }
 
 /* Style pour le pied de page */

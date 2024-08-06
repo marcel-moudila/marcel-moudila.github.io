@@ -8,7 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>MARCEL MOUDILA</h1>
+        <div class="header-content">
+            <h1>MARCEL MOUDILA</h1>
+            <img src="images/moi.jpeg" alt="Marcel Moudila" class="header-image">
+        </div>
     </header>
     <nav>
         <ul>
@@ -18,39 +21,50 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Issu de Nancy, une ville dans l'Est de la France, reconnue pour sa place Stanislas et une des plus belles villes étudiantes; je suis diplômé de l'Université de Lorraine en Master Mathématiques - site de Nancy.</p>
-    </section>
-    <section id="skills">
-        <h2>Mes Compétences</h2>
-        <ul>
-            <li>Mathématiques : compétences avancées en analyse, algèbre, probabilités, me permettant de résoudre des problèmes complexes et de développer des modèles mathématiques sophistiqués.</li>
-            <li>Informatique : maîtrise les outils de programmation, l'analyse de données, et les méthodes numériques pour modéliser, résoudre des problèmes complexes et optimiser des systèmes dans divers domaines scientifiques et industriels</li>
-            <li>Système de gestion de base des données : sait concevoir, gérer et optimiser des systèmes de gestion de bases de données, en appliquant des principes avancés de modélisation, de normalisation et de requêtage pour garantir l'efficacité et l'intégrité des données.</li>
-            <li>Intelligence artificielle : compétent dans l'application des techniques d'intelligence artificielle, telles que le machine learning et le deep learning, pour développer des modèles prédictifs et résoudre des problèmes complexes de vision par ordinateur (computer vision) ou traitement automatique du language naturel (NLP) à l'aide de données</li>
-            <li>Développement web : compétences nécessaires pour concevoir et développer des applications web dynamiques, intégrant des algorithmes complexes et des visualisations de données interactives, tout en assurant la performance et la sécurité des systèmes.</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Mes Projets</h2>
-        <div class="project">
-            <h3>Analyse des Voies Ferrées en Île-de-France pour les JO Paris 2024</h3>
-            <p>Dans ce projet, j'ai utilisé Power BI pour analyser les voies ferrées en Île-de-France dans le cadre des préparations pour les JO Paris 2024. Le projet comprend des visualisations des données sur les voies ferroviaires par exploitant (SNCF, RATP, KEOLIS, TRANSKEO,...) et/ou par mode de transport (métro, tranway, RER, ...).</p>
-            <p>Interagissez avec le tableau de bord ci-dessous pour explorer les données :</p>
-            <!-- Intégration du tableau de bord Power BI -->
-            <div class="responsive-iframe-container">
-                <iframe title="testpowerbi" src="https://app.powerbi.com/view?r=eyJrIjoiZDFmNzhlZDMtZTI5Zi00YmIxLTlhODMtZTQ4ODY2OWY4YTljIiwidCI6IjE1ODcxNmNmLTQ2YjktNDhjYS04YzQ5LWM3YmI2N2U1NzVmMyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
-            </div>
-        </div>
-        <div class="project">
-            <h3>Projet 2</h3>
-            <p>Description du projet 2.</p>
-        </div>
-    </section>
+    <main>
+        <section class="left-side">
+            <section id="projects">
+                <h2>Mes Projets</h2>
+                <div class="project">
+                    <h3>Analyse des Voies Ferrées en Île-de-France pour les JO Paris 2024</h3>
+                    <p>Dans ce projet, j'ai utilisé Power BI pour analyser les voies ferrées en Île-de-France dans le cadre des préparations pour les JO Paris 2024. Le projet comprend des visualisations des données sur les voies ferroviaires par exploitant (SNCF, RATP, KEOLIS, TRANSKEO,...) et/ou par mode de transport (métro, tramway, RER, ...).</p>
+                    <p>Interagissez avec le tableau de bord ci-dessous pour explorer les données :</p>
+                    <div class="responsive-iframe-container">
+                        <iframe title="testpowerbi" src="https://app.powerbi.com/view?r=eyJrIjoiZDFmNzhlZDMtZTI5Zi00YmIxLTlhODMtZTQ4ODY2OWY4YTljIiwidCI6IjE1ODcxNmNmLTQ2YjktNDhjYS04YzQ5LWM3YmI2N2U1NzVmMyIsImMiOjh9" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Détection des objets en temps réel</h3>
+                    <p>YOLO est un modèle Deep Learning basé sur des architectures de réseaux de neurones CNNs conçu pour une détection rapide et précise en temps réel des objets dans des images ou séquences vidéo. Jusqu'à présent, il a surpassé toutes les méthodes précédentes, surtout dans le domaine de la conduite autonome et de la surveillance. Le flux vidéo pour ce projet est la vidéo d'une caméra d'un ordinateur portable utilisé en extérieur et braqué sur une route.</p>
+                    <p>Le lien du notebook Jupyter est <a href="https://github.com/marcel-moudila/machine-learning_deep-learning/blob/main/notebook3.ipynb" target="_blank">ici</a>.</p>
+                    <div class="project-images">
+                        <img src="images/yolo3.png" alt="YOLO image 3">
+                        <img src="images/yolo2.png" alt="YOLO image 2">
+                        <img src="images/yolo1.png" alt="YOLO image 1">
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="right-side">
+            <section id="about">
+                <h2>À propos de moi</h2>
+                <p>Issu de Nancy, une ville dans l'Est de la France, reconnue pour sa place Stanislas et une des plus belles villes étudiantes; je suis diplômé de l'Université de Lorraine en Master Mathématiques - site de Nancy.</p>
+            </section>
+            <section id="skills">
+                <h2>Mes Compétences</h2>
+                <ul>
+                    <li>Mathématiques : compétences avancées en analyse, algèbre, probabilités, me permettant de résoudre des problèmes complexes et de développer des modèles mathématiques sophistiqués.</li>
+                    <li>Informatique : maîtrise les outils de programmation, l'analyse de données, et les méthodes numériques pour modéliser, résoudre des problèmes complexes et optimiser des systèmes dans divers domaines scientifiques et industriels.</li>
+                    <li>Système de gestion de base des données : sait concevoir, gérer et optimiser des systèmes de gestion de bases de données, en appliquant des principes avancés de modélisation, de normalisation et de requêtage pour garantir l'efficacité et l'intégrité des données.</li>
+                    <li>Intelligence artificielle : compétent dans l'application des techniques d'intelligence artificielle, telles que le machine learning et le deep learning, pour développer des modèles prédictifs et résoudre des problèmes complexes de vision par ordinateur (computer vision) ou traitement automatique du langage naturel (NLP) à l'aide de données.</li>
+                    <li>Développement web : compétences nécessaires pour concevoir et développer des applications web dynamiques, intégrant des algorithmes complexes et des visualisations de données interactives, tout en assurant la performance et la sécurité des systèmes.</li>
+                </ul>
+            </section>
+        </section>
+    </main>
     <section id="contact">
         <h2>Contactez-moi</h2>
-        <p>Email: votre.email@example.com</p>
+        <p>Email: moudilamarcel@gmail.com</p>
     </section>
     <footer>
         <p>&copy; 2024 Marcel Moudila. Tous droits réservés.</p>
