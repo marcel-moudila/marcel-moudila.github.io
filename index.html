@@ -68,7 +68,7 @@
         <section id="projects">
             <h2>Mes Projets</h2>
             <div class="project">
-                <h3>Analyse des Voies Ferrées en Île-de-France avec Power BI</h3>
+                <h3> Projet : <br> Analyse des Voies Ferrées en Île-de-France avec Power BI</h3>
                 <p>Dans ce projet, j'ai utilisé  Power BI Desktop pour analyser les voies ferrées en Île-de-France dans le cadre des préparations pour les JO Paris 2024.</p>
                 <p>J'ai ensuite publié le tableau de bord sur  Power BI Service  pour enfin incorporer le rapport dans du script HTML de ce portfolio. Le jeu des données est disponible sur le site officiel des JO Paris 2024.</p>
                 <p>Le projet comprend des visualisations des données sur les voies ferroviaires par exploitant (SNCF, RATP, KEOLIS, TRANSKEO,...) et/ou par mode de transport (métro, tramway, RER, ...).</p>
@@ -77,7 +77,7 @@
                     <iframe title="testpowerbi" src="https://app.powerbi.com/view?r=eyJrIjoiZDFmNzhlZDMtZTI5Zi00YmIxLTlhODMtZTQ4ODY2OWY4YTljIiwidCI6IjE1ODcxNmNmLTQ2YjktNDhjYS04YzQ5LWM3YmI2N2U1NzVmMyIsImMiOjh9" frameborder="0" allowfullscreen="true"></iframe>
                 </div>
 
-                <h3> Visualisation des données du jeu de données mtcars avec R shiny</h3>
+                <h3> Projet : <br> Visualisation des données du jeu de données mtcars avec R shiny</h3>
                 <p> Dans ce projet, on visualisera les nuages de points et la droite de régression linéaire estimée. J'ai utilisé ggplot pour la visualisationset l'ajout de la droite de régression.
                 Puis j'ai déployé l'application web  R shiny sur Shiny Apps  pour enfin migrer l'URL dans du script HTML de ce portfolio. </p>
                 <p> Changer les variables et visualiser les résultats en temps réel : </p>
@@ -86,18 +86,40 @@
                 </div>
                 
             </div>
+
             <div class="project">
-                <h3>Détection des objets en temps réel</h3>
-                <p><strong>YOLO</strong> est un modèle Deep Learning basé sur des architectures de réseaux de neurones CNNs conçu pour une détection rapide et précise en temps réel des objets dans des images ou séquences vidéo. Jusqu'à présent, il a surpassé toutes les méthodes précédentes, surtout dans le domaine de la conduite autonome et de la surveillance. Le flux vidéo pour ce projet est la vidéo d'une caméra d'un ordinateur portable utilisé en extérieur et braqué sur une route.</p>
-                <p>Le lien du notebook Jupyter est <a href="https://github.com/marcel-moudila/machine-learning_deep-learning/blob/main/notebook3.ipynb" target="_blank">ici</a>.</p>
-                <p>J'ai utilisé les poids de Yolo version 4 et la liste des labels coco.names qu'on peut trouver sur le site officiel; aussi j'ai utilisé la librairie OpenCV pour obtenir la vidéo en continu de la caméra de mon ordinateur portable qui a servi à voir le résultat de la détection avec YOLO.</p>
+                <h3> Projet : <br> Détection et classification des tomates en utilisant YOLOv8 </h3>
+                <p> YOLO est un modèle pré-entrainé de computer vision qui consiste à prédire les coordonnées
+                    des boîtes englobantes et la classe de chaque objet. YOLO réalise simultanément la détection et la classification des objets en une seule passe 
+                    à travers un réseau de neurones convolutifs 
+                </p>
+                <p> J'ai téléchargé le jeu des données "riped and unriped tomato dataset" disponible sur kaggle. Je n'avais pas besoin
+                    de faire les annotations car elles sont déjà fourni dans le téléchargement. J'ai utilisé YOLO version 8 à partir du module "ultralytics" de python.
+                J'ai entrainé mon modèle sur la base des données que j'ai téléchargé car sans cet entrainement, le modèle prédirait les mauvais objets. Après l'entrainement,
+                j'ai validé mon modèle grâce aux données de validation. voici les visualisations des résultas : 
+                </p>
                 <div class="project-images">
-                    <img src="images/yolo3.png" alt="YOLO image 3">
-                    <img src="images/yolo2.png" alt="YOLO image 2">
-                    <img src="images/yolo1.png" alt="YOLO image 1">
+                    <!--<img src="images/PR_curve-bis.png" alt="métrique recall precision">-->
+                    <img src="images/tomate1.jpg" alt="image de prédiction">
+                    <!--<img src="images/tomate2-bis.jpg" alt="autre image de prédiction">-->
+                </div>
+
+            </div>
+
+            <div class="project">
+                <h3>Projet : <br> Surveillance vidéo en temps réel et détection d'objets du jeu de données COCO</h3>
+                <p> Le flux vidéo pour ce projet est la vidéo d'une caméra d'un ordinateur portable utilisé en extérieur et braqué sur une route.</p>
+                <p>Le lien du notebook Jupyter est <a href="https://github.com/marcel-moudila/machine-learning_deep-learning/blob/main/notebook3.ipynb" target="_blank">ici</a>.</p>
+                <p>J'ai utilisé les poids de Yolo version 4 et la liste des labels coco.names qu'on peut trouver sur le site officiel; aussi j'ai utilisé la librairie OpenCV pour obtenir 
+                    la vidéo en continu de la caméra de mon ordinateur portable qui a servi à voir le résultat de la détection avec YOLO.</p>
+                <div class="project-images">
+                    <img src="images/yolo3.png" alt="YOLO image ">
+                    <!--<img src="images/yolo2.png" alt="YOLO image 2">-->
+                    <!--<img src="images/yolo1.png" alt="YOLO image 1">-->
                 </div>
                 
             </div>
+
         </section>
     </main>
 
